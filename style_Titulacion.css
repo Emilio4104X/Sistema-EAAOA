@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #047404;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.logo-izquierdo,.logo-derecho {
+  position: absolute;
+  top: 10px;
+  height: 70px;
+}
+
+.logo-izquierdo {
+  left: 10px;
+
+}
+
+.logo-derecho {
+  right: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  width: 230px;
+  background: #002244;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 1px solid #444;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:hover {
+  background: #004488;
+}
+
+.icono-menu {
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-section {
+  border-top: 2px solid #996633;
+  border-bottom: 2px solid #996633;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.form-section input,
+.form-section select {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.form-section button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background: #0055aa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #996633;
+  text-align: center;
+  padding: 8px;
+}
+
+.bottom-section {
+  background: #eee;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.tabla2, td {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px; 
+}
+  
+.navegacion {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.navegacion button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navegacion button:hover {
+  background-color: #0055aa;
+}
