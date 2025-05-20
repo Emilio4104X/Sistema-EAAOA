@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Titulación</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header>
+    <img src="/mnt/data/logo sistema akea.png" alt="Logotipo Sistema AEKEA.png" class="logo-izquierdo">
+    <h2>SISTEMA DE TITULACIÓN - AEKEA</h2>
+    <img src="/mnt/data/logo fime .png" alt="Logo FIME" class="logo-derecho">
+  </header>
+
+  <div class="container">
+    <h3>Formulario Completo de Titulación</h3>
+
+    <label for="nombre">Nombre del Estudiante:</label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre completo">
+
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" placeholder="12345678">
+
+    <label for="carrera">Carrera:</label>
+    <input type="text" id="carrera" placeholder="Ej. Ingeniero en Software">
+
+    <label for="modalidad">Modalidad de Titulación:</label>
+    <select id="modalidad">
+      <option value="">Seleccione una opción</option>
+      <option>Tesis</option>
+      <option>Examen General</option>
+      <option>Proyecto Profesional</option>
+      <option>Merito Academico</option>
+    </select>
+
+    <label for="fecha">Fecha de Solicitud:</label>
+    <input type="date" id="fecha">
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" placeholder="tucorreo@ejemplo.com">
+
+    <div class="botones">
+      <button onclick="window.location.href='Titulacion.html'">Atrás</button>
+      <button onclick="alert('Datos enviados correctamente')">Enviar</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+

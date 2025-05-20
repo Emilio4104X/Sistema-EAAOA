@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registrar Tesis</title>
+  <link rel="stylesheet" href="css/style_tesis.css" />
+</head>
+<body>
+
+  <header>
+    <img src="img/Logo Sistema EAAOA.png" alt="Logotipo EAAOA" class="logo-izquierdo">
+    <h2>SISTEMA DE TITULACIÓN - EAAOA</h2>
+    <img src="img/FIME.jpeg" alt="Logo FIME" class="logo-derecho">
+  </header>
+
+  <div class="container">
+    <h3>Registro de Nueva Tesis</h3>
+
+    <form action="registrar_tesis.php" method="POST">
+      <label for="titulo">Título:</label>
+      <input type="text" name="titulo" id="titulo" required>
+
+      <label for="descripcion">Descripción:</label>
+      <input type="text" name="descripcion" id="descripcion" required>
+
+      <label for="estatus">Estatus:</label>
+      <select name="estatus" id="estatus" required>
+        <option value="">Seleccione</option>
+        <option value="En proceso">En proceso</option>
+        <option value="Terminada">Terminada</option>
+        <option value="Cancelada">Cancelada</option>
+      </select>
+
+      <label for="fecha_inicio">Fecha de Inicio:</label>
+      <input type="date" name="fecha_inicio" id="fecha_inicio" required>
+
+      <label for="fecha_termino">Fecha de Término:</label>
+      <input type="date" name="fecha_termino" id="fecha_termino" required>
+
+      <label for="fecha_examen">Fecha de Examen:</label>
+      <input type="date" name="fecha_examen" id="fecha_examen">
+
+      <label for="nombre">Nombre del Alumno:</label>
+      <input type="text" name="nombre" id="nombre" required>
+
+      <label for="carrera">Carrera:</label>
+      <input type="text" name="carrera" id="carrera" required>
+
+      <label for="nivel_estudios">Nivel de Estudios:</label>
+      <input type="text" name="nivel_estudios" id="nivel_estudios" required>
+
+      <label for="matricula_al">Matrícula del Alumno:</label>
+      <input type="text" name="matricula_al" id="matricula_al" required>
+
+      <label for="matricula_doc">Numero del Docente (ID):</label>
+      <input type="text" name="matricula_doc" id="matricula_doc" required>
+
+      <div class="botones">
+        <button type="button" onclick="window.location.href='Titulación.html'">Atrás</button>
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

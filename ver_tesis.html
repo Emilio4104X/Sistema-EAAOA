@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema EAAOA</title>
+  <link rel="stylesheet" href="css/style_Titulación.css">
+</head>
+<body>
+
+<header>
+  <img src="img/Logo Sistema EAAOA.png" alt="Logo EAAOA" class="logo-izquierdo">
+  <h2>SISTEMA DE TITULACIÓN - EAAOA </h2>
+  <img src="img/FIME.jpeg" alt="Logo FIME" class="logo-derecho">
+</header>
+
+<div class="container">
+  <nav>
+    <ul>
+      <li>Inicio<a href="Titulación.html" class="navegacion">-</a></li>
+      <li>Recibo Servicios Académicos</li>
+      <li>Consulta Inscripción</li>
+      <li>Consulta Evaluación</li>
+      <li>Encuestas</li>
+      <li>Titulación del estudiante</li>
+      <li>Inscripción EXENS</li>
+      <li>Proyecto<a href="ver_proyecto.html" class="navegacion">-</a></li>
+      <li>Tesis <a href="registro_tesis.html">-</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h3>Agregar Trámite de Titulación</h3>
+    <div class="form-section">
+      <label for="tipo">Tipo de Documento:</label>
+      <select id="tipo">
+        <option>Seleccione</option>
+        <option>Titulación Posgrado</option>
+        <option>Titulación Maestría</option>
+      </select>
+      <button>Solicitar Trámite</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Descricpión</th>
+          <th>Estatus</th>
+          <th>Fecha inicio</th>
+          <th>Feche Termino</th>
+          <th>Fecha Examen</th>
+          <th>Nombre</th>
+          <th>Carrera</th>
+          <th>Nivel Estudios</th>
+          <th>Matricula</th>
+          <th>Docente</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="11">
+            <!-- Aquí se carga la tabla con los alumnos desde PHP -->
+            <iframe src="listar_tesis.php" width="100%" height="300" style="border:none;"></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="bottom-section">
+      <label>Email: <input type="email" value="emilioestrada210@gmail.com"></label>
+      <label>Celular: <input type="text" value="8131196474"></label>
+      <button onclick="window.location.reload()">Actualizar</button>
+    </div>
+
+    <div class="navegacion">
+      <button onclick="window.location.href='Iniciar sesion.html'">Atrás</button>
+      <button onclick="window.location.href='Titulacion 2.html'">Registrar alumno</button>
+      <button onclick="window.location.href='registrar_proyecto.html'">Registrar proyecto</button>
+      <button onclick="window.location.href='registro_tesis.html'">Registrar tesis</button>
+      <button onclick="window.location.reload()">Recargar</button>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
